@@ -53,6 +53,10 @@ public class Test01 {
         //c언어에서 나온명령어
 
         System.out.printf("저는 %s입니다. 나이는%d이고, 키는 %.2fcm입니다.", "이순신", 20, 190.4f);
+        System.out.printf("\n");
+        String str2=String.format("저는 %s입니다. 나이는%d이고, 키는 %.2fcm입니다.", "이순신", 20, 190.4f);
+        System.out.println(str2);
+
 
 
     }
