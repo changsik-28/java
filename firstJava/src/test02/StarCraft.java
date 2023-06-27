@@ -22,6 +22,12 @@ public class StarCraft {
         System.out.println("광물에 돈이 떨어짐...");
         돈캐기.cancel();
 
+        Marin marin2= new Marin();
+        marin2.run();
+
+        Timer 정찰하기 = new Timer();
+        정찰하기.scheduleAtFixedRate(marin2,1000,3000);
+
     }
 }
 class Teran{
@@ -60,6 +66,13 @@ class SCV extends TimerTask {
     @Override
     public void run() {
         System.out.println("광물을 케고 있습니다.");
+    }
+}
+
+class Marin extends TimerTask {
+    @Override
+    public void run() {
+        System.out.println("정찰을 나갑니다");
     }
 }
 
